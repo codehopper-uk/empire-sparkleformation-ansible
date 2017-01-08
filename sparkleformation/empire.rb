@@ -24,7 +24,7 @@ EOF
 
   parameters(:ansible_playbook_repo) do
     type 'String'
-    default ENV.fetch('ansible_playbook_repo', 'https://github.com/indigobio/sparkleformation-indigo-empire.git')
+    default ENV.fetch('ansible_playbook_repo', 'https://github.com/codehopper-uk/empire-sparkleformation-ansible.git')
     allowed_pattern "[\\x20-\\x7E]*"
     description 'Git repository containing ansible playbook'
     constraint_description 'can only contain ASCII characters'
